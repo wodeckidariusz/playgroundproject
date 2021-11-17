@@ -13,6 +13,11 @@ namespace PlaygroundProject
     public class Animal
     {
         private string _animalAge;
+
+        public Animal()
+        {
+            AnimalAge = _animalAge;
+        }
         public string AnimalAge
         {
             get { return _animalAge; }
