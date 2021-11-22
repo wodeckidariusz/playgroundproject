@@ -67,6 +67,36 @@ namespace PlaygroundProject
 
             #endregion
 
+            #region Generics
+
+            var dummyArray = new MyDummyArrayCollection<string>();
+            dummyArray.AddToArray("\"Position one\"");
+            dummyArray.AddToArray("\"Position two\"");
+
+            string x = dummyArray.GetItemFromTop();
+            string y = dummyArray.GetItemFromTop();
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+
+            string a = "pos 1"; //could also be int or any other type
+            string b = "pos 2";
+
+            Console.WriteLine($"Vals before swapping: a={a} and b={b}");
+
+            dummyArray.Swap(ref a, ref b); //calling generic method
+
+            Console.WriteLine($"Swapped vals: a={a} and b={b}");
+
+
+            var dummyDictionary = new MyDiscionary<string, int>();
+            string key = "first";
+            dummyDictionary.AddDictItem(key, 22);
+
+            Console.WriteLine($"Dictionary item for key {key} is: {dummyDictionary.GetDictionaryItemByKey(key)}");
+
+            #endregion
+
         }
     }
 }
