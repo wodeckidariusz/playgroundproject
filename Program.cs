@@ -2,7 +2,7 @@
 
 namespace PlaygroundProject
 {
-    class Program
+    class Program : Car
     {
         static void Main(string[] args)
         {
@@ -34,8 +34,19 @@ namespace PlaygroundProject
 
             #region Abstractions
 
-            Stock stock = new Stock(12, 33);
-            stock.display(); //calling abstract method
+            /*Stock stock = new Stock(12, 33);
+            stock.display(); //calling abstract method*/
+
+            #endregion
+
+            #region Acces modifiers
+
+            /*Car car = new SportCar();
+            car.Capacity = 12; //ok while the same assembly
+            SportCar sportCar = (SportCar) car;
+            sportCar.displayCapacity();
+
+            Console.ReadLine();*/
 
             #endregion
         }
