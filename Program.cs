@@ -2,7 +2,7 @@
 
 namespace PlaygroundProject
 {
-    class Program : Car
+    class Program
     {
         static void Main(string[] args)
         {
@@ -49,6 +49,24 @@ namespace PlaygroundProject
             Console.ReadLine();*/
 
             #endregion
+
+            #region Interfaces
+
+            /*ICustomUpEnumerator countup = new UpCounter(0, 12);
+            ICustomDownEnumerator countdown = new DownCounter(12, 0);
+
+            while (countup.MoveNext())
+            {
+                Console.WriteLine(countup.Current);
+            }
+
+            while (countdown.MovePrevious())
+            {
+                Console.WriteLine(countdown.Current);
+            }*/
+
+            #endregion
+
         }
     }
 }
